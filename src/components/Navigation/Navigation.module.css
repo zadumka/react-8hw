@@ -1,0 +1,23 @@
+.link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: 700;
+  color: #2a363b;
+}
+
+.link.active {
+  color: #273cc9;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 16px;
+    background-color: #273cc9;
+  }
+}
